@@ -10826,7 +10826,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.45), rgba(47, 23, 15, 0.45)), url("../img/bg.jpg");
+  background-image: linear-gradient(#c7be54bb, #c7be54bb), url("../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -10853,7 +10853,7 @@ p {
   font-weight: 800;
 }
 .site-heading .site-heading-lower {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 100;
   line-height: 4rem;
 }
@@ -10981,6 +10981,33 @@ p {
 }
 @media (min-width: 1200px) {
   .intro .intro-text {
+    width: 45%;
+  }
+}
+
+.intro-flip {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .intro-flip .intro-img {
+    width: 75%;
+    float: left;
+  }
+  .intro-flip .intro-text {
+    right: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro-flip .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .intro-flip .intro-text {
     width: 45%;
   }
 }
